@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos</title>
+    <style>
+        /*
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = childer
+        */
+
+
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+        }
+
+        .title {
+            font-size: 1.5em;
+            color: red;
+            text-decoration: underline;
+        }
+
+        .title:hover {
+            color:aqua;
+            text-decoration: overline;
+            
+        }
+
+        #sub-title {
+            color: rgb(122, 122, 33);
+        }
+
+        #sub-title:active {
+            color: rgb(23, 184, 212);
+        }
+
+        .first-main { 
+            color: brown;
+        }
+
+        span {
+            color: black;
+            background-color:azure ;
+        }
+
+        .first-main > ul {
+            display: none;
+        }
+
+        .first-main:hover > ul {
+            display: block;
+            
+        }
+
+
+
+        ul, ol, li {
+            list-style: none;
+        }
+
+        a {
+            color: blueviolet;
+            text-decoration: none;
+            font-weight: bold;
+            text-decoration: overline;
+        }
+
+        a:visited {
+            color: antiquewhite;
+        }
+
+        a:hover {
+            color: forestgreen;
+            text-decoration: underline;
+        }
+
+        a:active {
+            background-color: blue;
+        }
+
+        .especial {
+            background-color: bisque;
+        
+        }
+
+        .especial-youtube:hover {
+            background-color: black;
+            
+        }
+        
+        .especial::before {
+            content: '⬅️';
+
+        }
+
+        .especial::after {
+            content: '➡️';
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="title">Personalizando Links</h1>
+    <h2 id="sub-title">Segue a lista</h2>
+    <div class="first-main">
+        PASSE O MOUSE AQUI PARA ACESSAR A <span>LISTA </span>
+        <ul>
+            <li><a class="especial especial-code" href="https://github.com/VTNCODE/VTNCODE" target="_blank" rel="external">Repositório do GITHUB</a></li>
+            <li><a class="especial especial-youtube" href="https://www.youtube.com/channel/UCn4XJNseRfmD8WVi48I-JQA" target="_blank" rel="external">Canal do YouTube</a></li>
+            <li><a class="especial especial-list" href="https://www.youtube.com/playlist?list=PLVai36VUKZoCKDEg2bFh3XY_Daw9kPWIz" target="_blank" rel="external">Playlist de Programação</a></li>
+        </ul>
+    </div>
+</body>
+</html>

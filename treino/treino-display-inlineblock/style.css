@@ -1,0 +1,35 @@
+div {
+    display: flex;
+    border: 3px solid #fff;
+    border-radius: 5px;
+}
+
+div:hover {
+    background-color: beige;
+}
+
+.primeira-caixa {
+    width: 33.333%;
+    height: 150px;
+    background-color: blue;
+    
+}
+.segunda-caixa {
+    width: 33.333%;
+    height: 150px;
+    background-color:brown ;
+}
+.segunda-caixa:hover {
+    background-color: blueviolet;
+
+}
+
+
+.terceira-caixa {
+    width: 33.333%;
+    height: 150px;
+    background-color: violet;
+}
+.terceira-caixa:hover {
+    background-color: aquamarine;
+}

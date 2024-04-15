@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronauta responsivo</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+        }
+        div > #espaco {
+            position: relative;
+            width: 100%;
+            min-width: 500px;
+            max-width: 1360px;
+        } 
+        div > #astronauta {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -250px;
+            margin-top: -254px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <img id="espaco" src="imagens/espaco.jpg" alt="imagem do espaco">
+        <img src="imagens/astronauta.png" alt="astrounauta no espaço" id="astronauta">
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'college';
+    src: url(fontes/college.ttf) format('opentype');
+}
+
+body {
+    background-color: gray;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.imagens {
+    min-width: 200px;
+    max-width: 800px;
+    height: 500px;
+    background-image: linear-gradient(to right, rgba(255, 212, 0, 1) 0%, 24.24698770046234%, rgba(38, 41, 96, 1) 48.49397540092468%, 74.24698770046234%, rgba(0, 102, 255, 1) 100%);
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.400);
+    border: 5px solid rgb(100, 86, 8);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+#especial {
+    background-color: white;
+}
+.rodry {
+    text-align: center;
+    padding-top: 20px;
+}
+h2 {
+    font-size: 30px;
+    font-family: 'college';
+    background-color: white;
+    text-align: center;
+}
+#rayo {
+    width: 300px;
+}
+#anao {
+    width: 50%;
+}
+#turtle {
+    width: 200px;
+}
+#magican {
+    width: 40%;
+}
+.relative {
+    position: relative;
+}
+#relative {
+    top: 60%;
+    position: relative;
+}
+#xandinho {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}

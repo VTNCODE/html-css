@@ -1,0 +1,26 @@
+.example {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.example-item {
+    width: 33.333%;
+    height: 150px;
+    display: block;
+}
+.example-item-first {
+    background-color: aqua;
+}
+.example-item-second {
+    background-color: brown;
+    margin-left: auto;
+}
+.example-item-third {
+    background-color: cadetblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    list-style: none
+}

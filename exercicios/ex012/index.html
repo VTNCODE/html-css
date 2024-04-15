@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+    <style>
+        body {background-color: aqua}
+    </style>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospeado no meu própio servidor</p>
+
+    <video src="videos/videooriginal.mp4" width="500" autoplay controls loop></video>
+    <p>Aqui em baixo a versão WEBM </p>
+    <video src="videos/videowebm.webm" width="500" controls></video>
+    <p>E aqui em baixo a versão OGG</p>
+    <video src="videos/videoogg.ogg"></video>
+    <p>Percebe-se que o formato ogg não é compativel com o <mark style="background-color: salmon;">chrome!</mark></p>
+    <h2>Usando o sources src para carregar o vídeo de diferentes formatos para diferentes navegadores em um só</h2>
+    <video width="500" loop poster="imagens/thumbnail.png" controls>
+        <source src="videos/videowebm.webm" type="video/webm">
+        <source src="videos/videooriginal.mp4" type="video/mp4">
+        <source src="videos/videoogg.ogv" type="video/ogg">
+        
+        <p>Seu navegador não tem compatibilidade</p>
+        <p><a href="videos/videooriginal.mp4" download="videooriginal">clique aqui para efetuar o dowload do vídeo</a></p>
+        
+    </video>
+    
+    <br>
+    <h2>Aqui está uma lista de vídeos para 
+    assitir de manhã!</h2>
+    <ul type="disk">
+       <li> Videos sobre a natureza </li>
+         <ul>
+            <li><a href="pag002.html" target="_self" rel="next"><abbr title="Vídeo muito legal sobre a natureza dinâmica!!!!">Video 1</abbr></a></li>
+            <li><a href="pag003.html" target="self" rel="next"><abbr title="Vídeo mais legal ainda!!!">Video 2</abbr></a></li>
+         </ul>
+        
+    </ul>
+    <br>
+   
+
+   
+    
+</body>
+</html>

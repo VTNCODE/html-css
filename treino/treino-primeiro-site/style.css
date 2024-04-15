@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+a:hover {
+    text-decoration: underline;
+} 
+
+abbr {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #2EAEDD, #2258A2, #2258A2 );
+}
+
+header {
+    background-color: #3dcac1;
+    border-radius: 5px;
+    border: thick rgb(23, 49, 65) solid;
+    padding: 20px;
+    width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#title {
+    text-align: center;
+    color: #18345a;
+}
+
+.sub-title {
+    text-align: center;
+}
+
+#sub-title-bottom {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #18345a;
+}
+
+#menu > .menu-items {
+    display: none;
+}
+#menu:hover > .menu-items {
+    display: inline-block;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    margin-left: 30px;
+    
+}
+
+main {
+    color: white;
+    width: 570px;
+    margin: auto;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    border: 10px rgb(23, 49, 65) solid;
+}
+
+#central-title {
+    color: #18345a;
+    margin-bottom: 50px;
+}
+
+#sub-title-avanço {
+    text-align: center;
+}
+
+#unico {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+#noticias {
+    padding-bottom: 50px
+}
+#pratica {
+    padding-bottom: 50px;
+} 
+footer {
+    text-align: justify;
+    margin-top: 60px;
+}
+#title-special {
+    text-align: center;
+    margin-bottom: 40px;
+}
+#follow {
+    margin: auto;
+    width: 620px;
+    background-color: black;
+    border: 5px dashed grey;
+    padding: 10px;
+    
+} 
+
+.followers {
+    background-color: rgb(37, 37, 11);
+    border-radius: 5px;
+    margin-right: -14px;
+    margin-left: 80px;
+    display: inline;
+    padding: 5px;
+}
+.caixas {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 25px;
+    height: 300px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: white;
+}
+#unico-two {
+    font-size: 1em;
+    text-align: center;
+}
+#unico-third {
+    text-align: center;
+    font-size: 0.8em;
+}
+.caixa-intermediaria > .exemplos-caixas {
+    display: none;
+}
+.caixa-intermediaria:hover > .exemplos-caixas {
+    display: inline-block;
+}
+.caixa-intermediaria {
+    
+    background-color: #2EAEDD;
+    width: 700px;
+    height: inherit;
+    margin-left: 50px;
+    display: inline-block;
+}
+.caixa-intermediaria::after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+}
+.exemplos-caixas {
+    color: wheat;
+    height: 20%;
+    width: 25%;
+    margin-top: 25px;
+    display: inline-block;
+}
+.first-box {
+    text-align: center;
+    background-color: red;
+} 
+.second-box {
+    text-align: center;
+    background-color: violet;
+}
+.third-box {
+    text-align: center;
+    background-color: orange;
+}
+

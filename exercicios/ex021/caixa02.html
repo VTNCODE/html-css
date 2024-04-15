@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            
+            
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        a:visited {
+            color:rgb(25, 73, 57) ;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: grey;
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+            
+        }
+
+        #first-text > #first-roll, #second-roll, #third-roll, #fourt-roll, #fifty-roll {
+            display: inline;
+        }
+
+        #first-roll > a {
+            text-decoration: none;
+            color: wheat;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        #second-roll > a {
+            text-decoration: none;
+            color: wheat;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        #third-roll > a {
+            text-decoration: none;
+            color: wheat;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        
+        #fourt-roll > a {
+            text-decoration: none;
+            color: wheat;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        
+        #fifty-roll > a {
+            text-decoration: none;
+            color: wheat;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        #first-roll:hover > #first-link {
+            text-decoration: underline;
+        }
+        
+        #second-roll:hover > #second-link {
+            text-decoration: underline;
+        }
+        #third-roll:hover > #third-link {
+            text-decoration: underline;
+        }
+        #fourt-roll:hover > #fourt-link {
+            text-decoration: underline;
+        }
+        #fifty-roll:hover > #fifty-link {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: inset 4px 6px 2px 2px rgba(0, 0, 0, 0.432);
+        }
+
+        #especial-p {
+            box-shadow: -3px -3px 7px 1px rgba(0, 0, 0, 0.329);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: grey;
+
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 8px;
+        }
+        footer > p {
+            display: inline;
+            box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+            margin: 0px;
+        }
+        #bola {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            border-radius: 50%;
+        }
+        #bola > p {
+            font-size: 20px;
+            padding: 15px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <div id="first-text">
+                <div id="first-roll"><a id="first-link" href="#">Link</a></div>
+                <div id="second-roll"><a id="second-link" href="#">Link</a></div>
+                <div id="third-roll"><a id="third-link" href="#">Link</a></div>
+                <div id="fourt-roll"><a id="fourt-link" href="#">Link</a></div>
+                <div id="fifty-roll"><a id="fifty-link" href="#">Link</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>  
+        <section id="assuntos">
+            <p id="especial-p">Aréa de tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notcicias sobre o Brasil</h2>
+                <aside>
+                    <p>Artigo escritos por josé da Silva Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid dicta quos cum autem obcaecati nobis illum distinctio, facilis sit debitis quaerat aut laudantium animi qui unde at reiciendis vel velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ut fuga voluptatibus, libero id eius magni consequatur nostrum iste nisi blanditiis ad saepe fugit error ab eligendi magnam accusantium minima. </p>
+                </aside>
+            </article>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Criando tags semânticas</p>
+    </footer>
+    <div id="bola"><p>bolao</p></div>
+
+
+</body>
+</html>

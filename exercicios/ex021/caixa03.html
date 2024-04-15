@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas personalizadas</title>
+    <style>
+        h1 {
+            border: 10px solid transparent;
+            padding: 20px;
+            text-align: center;
+            border-image-source: url(borda.png);
+            border-image-slice: 28;
+            border-image-repeat: repeat;
+        }
+        #example-two {
+            border-image-repeat: stretch;
+        }
+        #example-third {
+            border-image: url(borda.png) 30 stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <h1 id="example-two">Exemplo 2</h1>
+    <h1 id="example-third">Exemplo 3</h1>
+
+</body>
+</html>

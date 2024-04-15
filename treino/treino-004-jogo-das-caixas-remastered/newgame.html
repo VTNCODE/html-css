@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX GAME</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'gameplay';
+            src: url(fontes/Gameplay.ttf) format('opentype');
+        }
+        * {
+            margin: 0;
+        }
+        body {
+            background-color: gray;
+        }
+        .player {
+            width: 100%;
+            height: 200px;
+            background-color: black;
+            color: white;
+
+        }
+        h1 {
+            font-family: 'gameplay';
+            text-align: center;
+            letter-spacing: 1px;
+            padding-top: 80px;
+        }
+        .boxes {
+            font-size: 25px;
+            text-align: justify;
+            margin-top: 30px;
+        }
+        .boxes::after {
+            content: '';
+            width: 100%;    
+            height: 0;
+            display: inline-block;
+        }
+        .box {
+            font-family: 'gameplay';
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }       
+        span {
+            display: block;
+            margin-top: 106.111px;
+            
+        }
+        .boxes-positions {
+            margin-top: 50px;
+            position: relative;
+            top: 50px;
+            font-size: 25px;
+        }
+        .box-one {
+            background-image: linear-gradient(to right, #875010 0%, 25.801748037338257%, #F2C744 51.603496074676514%, 75.80174803733826%, #87500F 100%);
+        }
+        .box-two {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, 13.181817531585693%, rgba(202, 177, 111, 1) 26.363635063171387%, 31.1363622546196%, rgba(250, 242, 189, 1) 35.90908944606781%, 39.5454540848732%, rgba(250, 233, 165, 1) 43.18181872367859%, 47.49999940395355%, rgba(248, 218, 119, 1) 51.818180084228516%, 53.18181812763214%, rgba(204, 165, 74, 1) 54.54545617103577%, 59.54545438289642%, rgba(199, 172, 103, 1) 64.54545259475708%, 66.5909081697464%, rgba(156, 107, 40, 1) 68.63636374473572%, 70.9090918302536%, rgba(201, 145, 68, 1) 73.18181991577148%, 76.13636553287506%, rgba(197, 146, 65, 1) 79.09091114997864%, 82.72727429866791%, rgba(91, 56, 20, 1) 86.36363744735718%, 93.18181872367859%, rgba(177, 130, 66, 1) 100%);
+        }
+        .box-three {
+            background-image: linear-gradient(to right, rgba(184, 3, 13, 1) 0%, 36.94444298744202%, rgba(205, 14, 27, 1) 73.88888597488403%, 86.94444298744202%, rgba(173, 0, 5, 1) 100%);
+        }
+        .boxes-positions > .box {
+            background-color: beige;
+            display: grid;
+            place-items: center;
+        }
+        .box-first {
+            background-image: linear-gradient(to right, rgba(27, 36, 27, 1) 0%, 10.55363342165947%, rgba(41, 50, 41, 1) 21.10726684331894%, 21.97231873869896%, rgba(47, 53, 46, 1) 22.83737063407898%, 28.719723224639893%, rgba(77, 81, 77, 1) 34.602075815200806%, 35.467128455638885%, rgba(82, 84, 82, 1) 36.332181096076965%, 38.7543261051178%, rgba(96, 97, 95, 1) 41.17647111415863%, 44.46366876363754%, rgba(118, 117, 112, 1) 47.750866413116455%, 50.519031286239624%, rgba(141, 140, 126, 1) 53.28719615936279%, 55.709341168403625%, rgba(164, 160, 136, 1) 58.13148617744446%, 61.59169375896454%, rgba(201, 194, 148, 1) 65.05190134048462%, 67.47404634952545%, rgba(219, 209, 155, 1) 69.89619135856628%, 72.14532792568207%, rgba(220, 211, 170, 1) 74.39446449279785%, 77.85467207431793%, rgba(208, 204, 188, 1) 81.31487965583801%, 84.7750872373581%, rgba(198, 198, 195, 1) 88.23529481887817%, 94.11764740943909%, rgba(190, 190, 189, 1) 100%);
+            position: absolute;
+            left: 0;
+        }
+        .box-second {
+            background-image: linear-gradient(to right, rgba(68, 56, 80, 1) 0%, 27.030813694000244%, rgba(221, 178, 93, 1) 54.06162738800049%, 77.03081369400024%, rgba(66, 47, 51, 1) 100%);
+            position: absolute;
+            right: 0;
+        }
+        .box-third {
+            background-image: linear-gradient(to right, rgba(255, 249, 0, 1) 0%, 6.25%, rgba(9, 13, 17, 1) 12.5%, 22.22222238779068%, rgba(48, 51, 54, 1) 31.94444477558136%, 43.75000149011612%, rgba(34, 38, 41, 1) 55.55555820465088%, 77.77777910232544%, rgba(12, 16, 20, 1) 100%);
+            position: absolute;
+            left: 50%;
+            margin-left: -125px;
+        }
+        footer {
+            width: 100%;
+            padding: 5px 0;
+            background-color: white;
+            color: black;
+            position: relative;
+            top: 350px;
+        }
+        footer > h2 {
+            font-family: 'gameplay';
+            text-align: center;
+            letter-spacing: 1px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="player">
+        <h1>ESCOLHA UMA CAIXA</h1>
+    </div>
+    <div class="boxes">
+        <div class="box box-one"><span><a href="cristiano.html" target="_blank" rel="external">?</a></span></div>
+        <div class="box box-two"><span><a href="rodrygo.html" target="_blank" rel="external">?</a></span></div>
+        <div class="box box-three"><span><a href="modric.html" target="_blank" rel="external">?</a></span></div>
+    </div>
+    <div class="boxes-positions">
+        <div class="box box-first"><a href="superxandao.html" target="_blank" rel="external">?</a></div>
+        <div class="box box-second"><a href="messi.html" target="_blank" rel="external">?</a></div>
+        <div class="box box-third"><a href="mbappe.html" target="_blank" rel="external">?</a></div>
+    </div>
+    <footer>
+        <h2>Obrigado por jogar!</h2>
+    </footer>
+</body>
+</html>

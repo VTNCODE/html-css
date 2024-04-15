@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        .exemplo {
+            text-align: center;
+            background-color: lightblue;
+
+            width: 300px;
+            height: 210px;
+
+            border-top: 10px;
+            border-right: 10px;
+            border-bottom: 10px;
+            border-left: 10px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 20px;
+
+            padding-top: 112px;
+            padding-right: 25px;
+            padding-bottom: 1px;
+            padding-left: 25px;
+
+            margin-top: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            margin-left: auto;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+        }
+
+        .exemplo:hover {
+            background-color: beige;
+        }
+        .exemplo::after {
+            content: ' Deixa o like!'
+        }
+
+        p {
+            font-size: 20px;
+
+        }
+
+        a { /* elemento tipo: inline-level */
+            text-decoration: none;
+            border: 10px 5px 10px 5px;
+            border-style: solid;
+            border-color: aqua;
+
+            
+
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        .estilos {
+            background-color: burlywood;
+            border: 4px;
+            border-radius: 10px;
+            border-style: outset;
+            border-color: black;
+            text-align: justify;
+            width: 500px;
+            height: 94px;
+            margin: auto;
+            margin-top: 100px;
+            padding: 54px 1px 1px 15px;
+        }
+
+        #unico {
+            font: bold 25px Arial;
+            width: 200px;
+            height: 100px;
+            padding-top: 100px;
+            margin: auto;
+        }
+
+        .estilos-de-borda {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        
+
+        .first {
+            border-style: dashed;
+            border-color: aquamarine;
+        }
+
+        .second {
+            border-style: groove;
+            border-color: blueviolet;
+        }
+
+        .third {
+            border-style: hidden;
+        }
+
+        .four {
+            border-style: ridge;
+        }
+
+        .five {
+            border-style: double ;
+            border-color: blue;
+        }
+
+        .six {
+            border-style: solid;
+            border-color: black; 
+            
+        } 
+
+        .seven {
+            border-style: dotted;
+        }
+
+        .eight {
+            border-style: outset;
+            border-color: slategray;
+        }
+
+        .nine {
+            border-style: dotted dashed solid double;
+            border-color: red green blue violet;
+        }
+
+        .exemplos-outline {
+            font: bold 1.5em Arial;
+            width: 200px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        
+        .exemplo-fino {
+            border: 5px solid black;
+            padding: 10px 15px;
+            outline-style: dashed;
+            outline-width: thin;
+        }
+        .exemplo-medio {
+            border: 5px dotted rgb(209, 122, 9);
+            padding: 10px 15px;
+            outline-style: groove;
+            outline-width: medium;
+        }
+        .exemplo-grosso {
+            border: 5px double rgb(6, 49, 40);
+            padding: 10px 15px;
+            outline-style: dashed;
+            outline-width: thick;
+            outline-color: blueviolet;
+        }
+        .exemplo-tamanho-especifico {
+            border-width: 5px;
+            border-color: blue;
+            border-style: ridge double dotted solid;
+
+            padding: 10px 15px;
+
+            outline: 10px groove black;
+        }
+        .exemplo-offset {
+            margin-top: 50px;
+            background: yellow;
+            border: 1px solid black;
+            outline: 1px solid red;
+            outline-offset: 15px;
+        
+        }
+        #teste-unico {            background-color: aquamarine;
+        width: 300px;
+        padding: 20px;
+        box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="exemplo">Exemplo de caixa block level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos inline-level</a> Vamos ver como isso funciona na prática </p>
+    <h1 class="estilos">Existem diferentes estilos de bordas</h1>
+    <h2 id="unico">Aqui estão eles</h2>
+
+    <div class="estilos-de-borda">
+        <p class="first">border dashed</p>
+        <p class="second">border groove</p>
+        <p class="third">border hidden</p>
+        <p class="four">border ridge</p>
+        <p class="five">border double</p>
+        <p class="six">border solid</p>
+        <p class="seven">border dotted</p>
+        <p class="eight">border outset</p>
+        <p class="nine">border mix</p>
+    </div>
+    <div class="exemplos-outline">
+        <p class="exemplo-fino">Outline thin</p>
+        <p class="exemplo-medio">Outline medium</p>
+        <p class="exemplo-grosso">Outline thick</p>
+        <p class="exemplo-tamanho-especifico">Outline specific size</p>  
+        <p class="exemplo-offset">Outline offset</p>  
+    </div>
+
+    <h1>Exemplo da propiedade box-sizing</h1>
+    <p id="teste-unico">Este caixa irá ficar com a largura definida não importa quanto de padding for definido, más se você aumentar o preenchimento, o espaço de conteúdo disponível diminuirá.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, distinctio? Consequuntur fuga praesentium officia accusamus pariatur aut dolor deleniti quia aliquam nemo. Esse corporis, eveniet optio alias at numquam sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit reprehenderit natus laudantium dolorum earum vel unde veniam odio consequatur consectetur qui, ex dicta animi. Molestiae ex eum neque alias.
+    </p>
+
+</body>
+</html>

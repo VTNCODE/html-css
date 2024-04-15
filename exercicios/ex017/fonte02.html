@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        /*@ = regra */
+
+        body {
+       
+            font-family: 'Courier New', Courier, monospace;
+            /*
+            Medidas absolutas
+            cm, mm, in (polegada), px, pt (ponto), pc (paica)
+            */
+            /*Medidas Relativas
+            em, ex, rem, vw , vh, %
+
+            Geralmete 16px = 1em
+            */
+            font-size: 1.5em;
+            text-decoration: underline;
+        }
+
+            /*lighter normal bold bolder */
+
+
+        h1 {
+            /*
+            shorthand font ("shorthand" propiedade que serve para englobar varias propiedades em só uma)
+            - font-style --> font-weight --> font-size --> font-family -
+
+            font-style: italic;
+            font weight: bolder;
+            font-size: 3em;
+            font-family: 'Work Sans', sans-serif;
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2 {
+            font-family: 'Kaushan Script', sans-serif;
+            font-weight: 900;
+            font-style: oblique;
+            font-size: 2em;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, est facilis. Ut perspiciatis aperiam culpa minus, nesciunt sunt obcaecati neque molestias ducimus rerum distinctio quam vero praesentium quaerat, dicta laudantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quas animi non aliquid incidunt, ullam reiciendis, ea cum molestias dolor fugit quia ut aspernatur aliquam exercitationem itaque nostrum commodi iusto?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere recusandae laborum ut, qui, temporibus, sunt sequi minima rem voluptatum asperiores veniam ducimus delectus eius animi porro nesciunt laboriosam dolor necessitatibus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum magni corrupti velit minus sunt, consequatur sed repudiandae molestias natus hic accusamus delectus! A fuga sequi minima, aliquid eveniet nam labore!</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium culpa minima laboriosam sunt fuga voluptas, ipsum esse quae incidunt cum nisi tenetur odit, ex perferendis asperiores illo, labore facilis possimus.</p>
+</body>
+</html>

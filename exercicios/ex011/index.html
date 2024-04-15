@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    
+    
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fotom.png" type="image/png">
+        <img src="imagens/fotog.png " alt="imagem flexivel">
+    </picture>
+    <p><strong><ins>IMPORTANTE!</ins></strong>Lembrar que a ordem do tamanho das imagens dentro da tag &lt;picture&gt;importa muito! As imagens menores vem primeiro depois maiores! Lembrar disso!</p>
+    <h1>Testes CAPÍTULO11-1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius est eum voluptates suscipit soluta corrupti commodi alias hic nulla magnam, porro incidunt debitis et, illum omnis architecto consequuntur facilis quia?</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/katana300.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="imagens/katana700.png" type="image/png">
+        <img src="imagens/katanaoriginal.png" alt="katana original">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir <strong>áudios</strong> em HTML 5</p>
+    <audio src="midia/musica01.mp3" controls autoplay></audio>
+    <p>Essa maneira de áudio acima é limitada, dependerá do navegador e outros fatores para funcionar</p>
+    <!--MP3 WAV OGG-->r
+
+    <audio preload="metadata" autoplay controls loop> <!--AUTO PLAY NÃO ESTÁ FUNCIONANDO NEM PRA VÍDEO NEM PRA ÁUDIO!!!!!!!!!!!! -->
+        <source src="midia/musica02.mp3" type="audio/mpeg">
+        <source src="midia/musica02.mp3" type="audio/ogg">
+        <source src="midia/musica02.mp3" type="audio/wav">
+        <p><em>Se o seu navegador não conseguir reproduzir áudio</em><a href="midia/musica02.mp3" download="musica02"> Clique aqui para baixar o arquivo MP3 </a></p>
+    </audio>
+   
+   
+
+    
+
+    
+    
+    
+    
+   
+                                
+                                         
+                                         
+    
+   
+
+
+    
+</body>
+</html>

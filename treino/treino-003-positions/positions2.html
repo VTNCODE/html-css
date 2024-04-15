@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Positions Parte 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: gray;
+        }
+        .box-one {
+            background-color: aqua;
+        }
+        /*CENTRALIZANDO O POSITION ABSOLUTE*/
+        .box-two {
+            background-color: yellow;
+            opacity: .9;
+            position: absolute;
+            top: 25%;
+            margin-top: -50px;
+            left: 50%;
+            margin-left: -50px;
+            /*POSICIONANDO OS FILHOS NO CENTRO 1*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /*CENTRALIZANDO O POSITION ABSOLUTE, JEITO 2! USANDO A PROPIEDADE TRANSFORM!!!!!@!!!!*/
+        .box-three {
+            background-color: purple;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            /*POSICIONANDO OS FILHOS NO CENTRO 2*/
+            display: grid;
+            place-items: center;
+
+        }
+        .box-three:hover {
+            background-color: black;
+            color: white;
+            transition-duration: .5s;
+        }
+        .container {
+            width: 500px;
+            background-color:brown;
+            height: 200px;
+            position: relative;
+            left: 50%;
+            top: 170px;
+            margin-left: -250px;
+        }
+    </style>
+</head>
+<body>
+    <p>OI</p>
+    <div class="container">
+        <p>Olá</p>
+        <div class="box box-one">B1</div>
+        <p>Olá Mundo!</p>
+        <div class="box box-two">B2</div>
+        <p>Olá de novo!</p>
+        <div class="box box-three">B3</div>
+    </div>
+    <p>Olá</p>
+</body>
+</html>
