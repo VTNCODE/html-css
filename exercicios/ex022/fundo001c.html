@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+        body {
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+        .paizao {
+            text-align: justify;
+        }
+        .paizao::after {
+            content: '';
+            width: 100%;
+            display: inline-block;
+        }
+        .quadrado {
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: gray;
+            height: 300px;
+            width: 300px;
+            margin: 5px;
+            display: inline-block;
+        }
+        #q1 {
+            background-color: skyblue;
+        }
+        #q2 {
+            background-image: linear-gradient(to bottom, yellow, orange, red);
+        }
+        #q3 {
+            background-image: url(imagens/pattern003.png);
+        }
+        .padrasto {
+            text-align: justify;
+        }
+        .padrasto::after {
+            content: '';
+            width: 100%;
+            display: inline-block;
+        } 
+        #q4 {
+            background-image: url(imagens/pattern004.png);
+        }
+        #q5 {
+            background-image: url(imagens/pattern001.png);
+        }
+        #q6 {
+            background-color: lightslategrey;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="paizao">
+        <div class="quadrado" id="q1">
+        </div>
+        <div class="quadrado" id="q2">
+        </div>
+        <div class="quadrado" id="q3">
+        </div>
+    </div>
+    <div class="padrasto">
+        <div class="quadrado" id="q4">
+        </div>
+        <div class="quadrado" id="q5">
+        </div>
+        <div class="quadrado" id="q6">
+        </div>
+    </div>
+</body>
+</html>
