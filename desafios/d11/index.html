@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astronauta responsivo</title>
     <style>
-        * {
-            margin: 0px;
-            padding: 0;
-        }
-        div > #espaco {
-            position: relative;
-            width: 100%;
-            min-width: 500px;
-            max-width: 1360px;
-        } 
-        div > #astronauta {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-left: -250px;
-            margin-top: -254px;
-        }
-        
+       body {
+        height: 100vh;
+        background-color: black;
+        background-image: url(imagens/espaco.jpg);
+        background-position: center center;
+        background-size: cover;        
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        overflow-y: hidden;
+       }
+       .imagem {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+       }
+       
+       
     </style>
 </head>
 <body>
-    <div>
-        <img id="espaco" src="imagens/espaco.jpg" alt="imagem do espaco">
-        <img src="imagens/astronauta.png" alt="astrounauta no espaço" id="astronauta">
-    </div>
+   <div class="imagem">
+        <img src="imagens/astronauta.png" alt="">
+   </div>
+   <h1>sla</h1>
 </body>
 </html>
