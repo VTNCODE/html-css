@@ -4,8 +4,13 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --fontepadrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonteespecial01: 'Passion One';
+    --fonteespecial02: 'Sriracha';
+}
 p {
-    font-family: 'Sriracha';
+    font-family: var(--fonteespecial02);
     font-size: 3.5vw;
     line-height: 2em;
 }
@@ -20,7 +25,7 @@ a {
     text-align: center;
 }
 .cabecalho > h1 {
-    font-family: 'Passion One';
+    font-family: var(--fonteespecial01);
     font-variant: small-caps;
     font-size: 10vw;
     font-style: normal;
@@ -28,7 +33,7 @@ a {
     padding-top: 50px;
 }
 .cabecalho > p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fontepadrao);
     font-size: 1em;
     padding-bottom: 50px;
     line-height: 1.2;
@@ -88,7 +93,7 @@ a {
     padding: 10px;
 }
 .creditos > p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fontepadrao);
     font-size: 1em;
     line-height: normal;
 }
