@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+    <style>
+        h1 {
+            visibility: hidden;
+        }
+        table {
+            
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+            background-color: aqua;
+           
+        }
+        td {
+            vertical-align: bottom;
+            text-align: center; /*ALINHAMENTO HORIZONTAL*/
+            border: 2px solid black;
+            padding: 8px;
+        }
+        .aio {
+            background-color: gray;
+        }
+        .here {
+            background-color: yellow;
+        }
+        .nova {
+            margin-top: 15px;
+            margin-left: auto;
+        }
+        .nova td {
+            vertical-align: middle;
+        }
+        .novata {
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .novata  td {
+            vertical-align: top;
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela em HTML</h1>
+    <!--
+        Hierarquia de tabelas (simples)
+        TABLE <table> </table> = tabela 
+            Table ROW <tr> </tr> = linha de tabela
+            Table Header <th> </th> = cabeçalho de tabela
+            Table DATA <td> </td> = dados da tabela
+
+            obs: o table row header e data não precisam de fechamento</>
+    -->
+    <table>
+        <tr class="aio">
+            <td>A1
+            <td>A2
+            <td>A3
+        
+        <tr>
+            <td class="here">B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+    <table class="nova">
+        <tr>
+            <td>D1</td>
+            <td>D1</td>
+            <td>D1</td>
+        </tr>
+        <tr>
+            <td>h1</td>
+            <td>h1</td>
+            <td>h1</td>
+        </tr>
+        <tr>
+            <td>L1</td>
+            <td>L1</td>
+            <td>L1</td>
+        </tr>
+    </table>
+    <table class="novata">
+        <tr>
+            <td>J1</td>
+            <td>J1</td>
+            <td>J1</td>
+        </tr>
+        <tr>
+            <td>F1</td>
+            <td>F1</td>
+            <td>F1</td>
+        </tr>
+        <tr>
+            <td>G2</td>
+            <td>G2</td>
+            <td>G2</td>
+        </tr>
+    </table>
+</body>
+</html>
