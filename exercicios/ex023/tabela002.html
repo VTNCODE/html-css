@@ -28,7 +28,7 @@
         table > tfoot {
             border: 1px solid black;
         }
-        tbody > tr:nth-child(2n+3) { /* Or you can do even (par) or odd (impar) like tr:nth-chiçd(odd)/(even)                  */
+        tbody > tr:nth-child(2n+3) { /* Or you can do even (par) or odd (impar) like tr:nth-child(odd)/(even)                  */
             background-color: lightgrey;
            
         }
@@ -52,96 +52,99 @@
             padding: 10px;
             border: 1px solid black;
         }
-        
+        .container {
+            overflow: auto;
+        }
     </style>
 </head>
 <body>
     
-    <table>
-        <caption><strong>A valorização do BitCoin ao longo dos anos</strong></caption>
-        <thead>
-            <tr>
-                <th scope="col">ANO</th>
-                <th scope="col">BITCOIN</th>
-                <th>DÓLAR</th>
-                <th>REAL</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2009</td>
-                <td>1 BTC</td>
-                <td>U$0.0001</td>
-                <td>R$0.001</td>
-            </tr>
-            <tr>
-                <td>2010</td>
-                <td>1 BTC</td>
-                <td>U$0.07</td>
-                <td>R$0.21</td>
-            </tr>
-            <tr>
-                <td>2011</td>
-                <td>1 BTC</td>
-                <td>U$15,00</td>
-                <td>R$40,00</td>
-            </tr>
-            <tr>
-                <td>2012</td>
-                <td>1 BTC</td>
-                <td>U$7,00</td>
-                <td>R$21,00</td>
-            </tr>
-            <tr>
-                <td>2013</td>
-                <td>1 BTC</td>
-                <td>U$100,00</td>
-                <td>R$300,00</td>
-            </tr>
-            <tr>
-                <td>2014</td>
-                <td>1 BTC</td>
-                <td>U$600,00</td>
-                <td>R$1,800</td>
-            </tr>
-            <tr>
-                <td>2015</td>
-                <td>1 BTC</td>
-                <td>U$220,00</td>
-                <td>R$700,00</td>
-            </tr>
-            <tr>
-                <td>2016</td>
-                <td>1 BTC</td>
-                <td>U$600,00</td>
-                <td>R$1800,00</td>
-            </tr>
-            <tr>
-                <td>2017(JAN)</td>
-                <td>1 BTC</td>
-                <td>U$1,000</td>
-                <td>R$3.200</td>
-            </tr>
-            <tr>
-                <td>2017(DEZ)</td>
-                <td>1 BTC</td>
-                <td>U$7.100</td>
-                <td>R$35.000</td>
-            </tr>
-            <tr>
-                <td>2018</td>
-                <td>1 BTC</td>
-                <td>U$8.500</td>
-                <td>R$55.500</td>
-            </tr>
-            <tfoot>
+    <div class="container">
+        <table>
+            <caption><strong>A valorização do BitCoin ao longo dos anos</strong></caption>
+            <thead>
                 <tr>
-                  <th scope="row">PORCENTAGEM</th>
-                  <td colspan="4"> 689.999.900%</td>  
+                    <th scope="col">ANO</th>
+                    <th scope="col">BITCOIN</th>
+                    <th>DÓLAR</th>
+                    <th>REAL</th>
                 </tr>
-                
-
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2009</td>
+                    <td>1 BTC</td>
+                    <td>U$0.0001</td>
+                    <td>R$0.001</td>
+                </tr>
+                <tr>
+                    <td>2010</td>
+                    <td>1 BTC</td>
+                    <td>U$0.07</td>
+                    <td>R$0.21</td>
+                </tr>
+                <tr>
+                    <td>2011</td>
+                    <td>1 BTC</td>
+                    <td>U$15,00</td>
+                    <td>R$40,00</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>1 BTC</td>
+                    <td>U$7,00</td>
+                    <td>R$21,00</td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>1 BTC</td>
+                    <td>U$100,00</td>
+                    <td>R$300,00</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>1 BTC</td>
+                    <td>U$600,00</td>
+                    <td>R$1,800</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>1 BTC</td>
+                    <td>U$220,00</td>
+                    <td>R$700,00</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>1 BTC</td>
+                    <td>U$600,00</td>
+                    <td>R$1800,00</td>
+                </tr>
+                <tr>
+                    <td>2017(JAN)</td>
+                    <td>1 BTC</td>
+                    <td>U$1,000</td>
+                    <td>R$3.200</td>
+                </tr>
+                <tr>
+                    <td>2017(DEZ)</td>
+                    <td>1 BTC</td>
+                    <td>U$7.100</td>
+                    <td>R$35.000</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>1 BTC</td>
+                    <td>U$8.500</td>
+                    <td>R$55.500</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                      <th scope="row">PORCENTAGEM</th>
+                      <td colspan="4"> 689.999.900%</td>
+                    </tr>
+        
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
